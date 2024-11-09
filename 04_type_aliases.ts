@@ -20,3 +20,21 @@ let db: Database = {
 };
 
 type ID = number | string;
+
+/* Combine multiple types */
+type PersonalInfos = {
+    fullname: string
+    age: number
+    email: string
+};
+
+type ProfessionalInfos = {
+    school: string
+    senior: boolean
+    specialization: string
+};
+
+type Employee = PersonalInfos & ProfessionalInfos & {
+    id: number | string
+    salary: number
+};
