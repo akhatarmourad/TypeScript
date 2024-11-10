@@ -17,3 +17,16 @@ const student: Person = {
     getMark: (id: "SJ37342") => 14.56,
     setMark: (id: "SJ37342", mark: 16.78) => { console.log(mark); },
 }
+
+/* Inheritance */
+interface Infos {
+    readonly ID: string | number,
+    address: string,
+    citizenship: string,
+}
+
+interface Man extends Infos, Person {
+    wife: string,
+    job: string,
+    salary: number,
+}

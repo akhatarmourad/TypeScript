@@ -1,0 +1,1 @@
+console.log('Writing first lines in TypeScript !');
