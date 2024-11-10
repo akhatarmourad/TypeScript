@@ -1,5 +1,5 @@
 /* Enumerations in TypeScript */
-enum CourseChoices {
+const enum CourseChoices {
     NEXTJS,
     REACTJS,
     REDUX,
